@@ -1,0 +1,54 @@
+{# layout.html.twig #}
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>
+			{% block title %}Le Monde de Twig
+			{% endblock %}
+		</title>
+
+		{# <link rel="stylesheet" href="../../assets/css/style.css">  #}
+		{% block stylesheets %}{% endblock %}
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="icon" href="/assets/images/favicon.png">
+	</head>
+
+	<body>
+		{% include 'components/_navbar.html.twig' %}
+		{% block content %}
+			<h1>
+				{% block titlePage %}Le Monde de Twig
+				{% endblock %}
+			</h1>
+			<h2>
+				{% block titleSub %}Héritage et Inclusion
+				{% endblock %}
+			</h2>
+			    <p>Bonbon chocolate toffee halvah jujubes liquorice dragée wafer. 
+				Gummi bears gummi bears wafer chocolate bar gummi bears brownie cheesecake croissant. 
+				Shortbread caramels powder icing liquorice donut dessert pudding lemon drops. 
+				Tiramisu candy canes cake gummies shortbread biscuit. Pastry dragée sweet roll cake lollipop 
+				dessert jelly beans. Donut carrot cake apple pie carrot cake chocolate cake wafer chupa chups 
+			    cupcake chupa chups. Cookie candy canes sugar plum chocolate jelly-o sesame snaps sesame snaps 
+				pudding pudding. Donut macaroon carrot cake gummies gummies.
+				Lemon drops chocolate cake biscuit sesame snaps jelly. Fruitcake cheesecake candy canes sweet 
+				shortbread fruitcake. Bonbon cookie fruitcake chocolate cake ice cream liquorice danish croissant. 
+				Chupa chups soufflé wafer tiramisu bear claw jujubes fruitcake apple pie. Oat cake bonbon tootsie 
+			    roll wafer tart dessert sesame snaps jelly-o sugar plum. Cake oat cake candy canes sweet roll powder 
+				ice cream lollipop donut croissant. Tiramisu marshmallow cake dessert jujubes. Halvah apple pie tootsie 
+				roll marshmallow ice cream shortbread liquorice gingerbread.
+				Croissant dessert jelly sugar plum oat cake. Soufflé dessert macaroon jujubes danish. Jujubes pudding 
+				gingerbread danish tiramisu jelly-o cupcake. Soufflé marzipan marzipan cake muffin. Bear claw halvah 
+				chocolate cake candy oat cake. Chocolate bar powder pudding dragée gingerbread tootsie roll gummies apple pie. 
+				Powder cake croissant jelly-o chocolate cake marshmallow chocolate bar gummies. Marshmallow powder marzipan pie 
+				muffin.
+				</p>
+		{% endblock %}
+		{% include 'components/_footer.html.twig' %}
+	</body>
+</html>
+
