@@ -7,8 +7,8 @@ ul {
 a {
     text-decoration: none;
     font-size: 1.5rem;
-    text-transform: uppercase;
-    color: darkblue;
+    /* text-transform: uppercase; */
+    color: pink;
 }
 
 h1 {
